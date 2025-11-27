@@ -13,9 +13,9 @@ A brief description of what this project does and who it's for.
 
 ## 💻 Tech Stack
 
-| Type       | Technology Used |
+| model       | accuracy |
 |-----------|-----------------|
-| Language  | ...             |
+| Qwen2.5-7B-Instruct   | 66.40%             |
 | Framework | ...             |
 | Database  | ...             |
 | Tools     | ...             |

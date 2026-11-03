@@ -1,35 +1,44 @@
-# 📌 Project Title
-A brief description of what this project does and who it's for.
+# Improving Mathematical Reasoning in Large Language Models for Persian
 
----
+This repository contains the implementation and experiments of a master's thesis focused on improving mathematical reasoning in Large Language Models (LLMs), particularly for Persian-language mathematical problems.
 
-## 🚀 Features
-- Feature 1
-- Feature 2
-- Feature 3
-- Add more...
+## Research Overview
 
----
+The research explores techniques to improve multi-step mathematical reasoning through:
 
-## 💻 Tech Stack
+- **Prompt Engineering:** Chain-of-Thought (CoT) prompting.
+- **Supervised Fine-Tuning (SFT):** Adapting pre-trained models using mathematical datasets.
+- **Reinforcement Learning:** Applying Group Relative Policy Optimization (GRPO).
 
-| model       | accuracy |
-|-----------|-----------------|
-| Qwen2.5-7B-Instruct   | 66.40%             |
-| Framework | ...             |
-| Database  | ...             |
-| Tools     | ...             |
+## Dataset
 
----
+Persian mathematical question-answering datasets, including Persian adaptations of GSM8K-style problems.
 
-## 📥 Installation
+## Evaluation
 
-```bash
-# Clone repository
-git clone https://github.com/your-username/project-name.git
+Models are evaluated using the [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), with a focus on Exact Match (EM) accuracy.
 
-# Enter project
-cd project-name
+## Technologies
 
-# Install dependencies
-npm install # or yarn / pip install -r requirements.txt etc.
+- Python & PyTorch
+- Hugging Face Transformers
+- Unsloth & TRL
+- PEFT / LoRA
+- lm-evaluation-harness
+
+## Repository Structure
+
+```text
+reasoning/
+├── eval/                  # Evaluation scripts and resources
+├── fine tuning/           # Fine-tuning experiments
+├── new_evaluation.ipynb   # Evaluation notebook
+└── README.md
+```
+
+## Author
+
+**Arefeh Rajabian**
+
+M.Sc. in Computer Engineering – Software Engineering  
+Iran University of Science and Technology (IUST)

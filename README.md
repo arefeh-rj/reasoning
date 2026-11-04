@@ -32,7 +32,6 @@ Models are evaluated using the [EleutherAI lm-evaluation-harness](https://github
 reasoning/
 ├── eval/                  # Evaluation scripts and resources
 ├── fine tuning/           # Fine-tuning experiments
-├── new_evaluation.ipynb   # Evaluation notebook
 └── README.md
 ```
 
